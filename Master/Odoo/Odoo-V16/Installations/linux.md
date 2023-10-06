@@ -61,9 +61,62 @@ service postgresql status
 ```  
 
 Vous deriez obtenir une sortie de ce genre:  
-![capture_d’écran_du_2023-04-14_13-11-42.png](./.png)  
+![capture_d’écran_du_2023-04-14_13-11-42.png](./linux1.png)  
 
 3. Création d'un utilisateur  
 Une fois postgres installés nous allons créer un utilisateur pour la base de donnée que nous allons créer.  
 
 Connectez-vous à postgres:  
+```
+psql -U postgres
+```  
+Ensuite créez l'utilisateur odoo16 puis accordez lui les droits de créer des bases de données:  
+```
+CREATE ROLE odoo16;
+ALTER ROLE odoo16 WITH LOGIN;
+ALTER ROLE odoo16 WITH SUPERUSER;
+ALTER ROLE odoo16 WITH CREATEDB;
+```  
+
+## Configuration de Odoo avec Pycharm  
+Une fois Odoo et Pycharm téléchargés, nous pouvons passer à la configuration.  
+
+### Créer un environnement virtuel  
+1. Déplacez vous dans le repertoire Odoo télechargé ou cloné.  
+```
+cd ~/Bureau/Workspace/odoo
+```  
+2. Créer l'environnement virtuel.
+```
+python3 -m venv venv
+```  
+3. Activation de l'environnement  
+```
+source venv/bien/activate
+```  
+
+### Installer les dépendances  
+Après avoir créé l'environnement virtuel puis activé celui-ci, nous allons installer les dépendances nécessaire au bon fonctionnement de notre programme.  
+```
+pip install -r requirements.txt
+```  
+
+### Passer à la configuration  
+1. Ouvez Pycharm et chargez le code Odoo `File` -> `Open`.  
+2. Créez un fichier `odoo.conf` à la racine du projet puis collez-y le contenu ci-dessous:  
+```
+[options]
+; This is the password that allows database operations:
+; admin_passwd = admin
+addons_path = addons, odoo/addons
+db_host = False
+db_port = 5432
+db_user = odoo16
+db_password = False
+http_port = 8069
+```  
+2. Ensuite cliquez sur `Edit configurations...` comme dans l'image suivante:  
+
+![configop.png](./.png)  
+
+3. Cliquez sur `Add new configuration` puis selectionnez `Python`.  
