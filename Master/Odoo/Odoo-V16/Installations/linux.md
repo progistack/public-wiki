@@ -133,3 +133,20 @@ http_port = 8069
 6. Cliquez sur `Run`	 pour lancer odoo.  
 
 ![Run](./linux6.png)  
+# Fin du tutoriel  
+Une fois notre serveur lancé, vous pouvez accéder à page de création de donnée via le lien suivant: http://localhost:8069 .  
+Vous aurez ainsi la page suivante:  
+
+![acceder à la page de création de donnée](./linux7.png)  
+
+Copiez le `master password` et sauvegardez le dans votre fichier odoo.conf comme ceci:  
+`admin_passwd = 9scx-e5wa-ah8m`  
+Assurez que la ligne ne soit pas en commentaire en verifiant que le `;` n'est pas au debut de la ligne.  
+Remplissez le formulaire en reseignant les différents champs et cliquez sur `Create database`.  
+Une fois la base de donnée créée connectez-vous en renseignants les champs `Email` et `Password` que vous avez indiqués lors de la création de la base de donnée   puis cliquez sur `Se connecter`.  
+
+![Connectez-vous](./linux8.png)  
+
+Vous obtenez ainsi une interface semblable à celle de l'image ci-dessous.  
+
+![Congratulation! vous êtes sur l'interface d'odoo](./linux9.png)  
