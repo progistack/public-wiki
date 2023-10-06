@@ -4,7 +4,7 @@ Dans ce tutoriel, nous allons configurer Odoo avec Pycharm. Pour cela, nous allo
 Vous avez la possibilité de télécharger le code source de Odoo sur github de deux manières.
 
 ### Avec l'interface graphique
-1. Rendez-vous sur [https://github.com/odoo/odoo](https://github.com/odoo/odoo) pour le télechargement.
+1. Rendez-vous sur [le github d'odoo](https://github.com/odoo/odoo) pour le télechargement.
 2. Télechager le code en appuyant sur `Code` puis sur `Download Zip` comme indiqué dans l'image ci-dessous. 
 
 **NB**: N'oubliez pas de verifier la version souhaité (La version 16 dans notre exemple).  
@@ -30,7 +30,7 @@ git clone https://github.com/odoo/odoo.git --branch 16.0
 ## Telechargement de Pycharm community  
 Ouvrez Ubuntu software puis cherchez et telechargez Pycharm community.  
 Si vous ne le trouvez pas dans Ubuntu Software, allez-y sur le site officiel afin de télécharger la version commnunity. Le lien du site est:   
-[https://www.jetbrains.com/products/compare/?product=pycharm&product=pycharm-ce](https://www.jetbrains.com/products/compare/?product=pycharm&product=pycharm-ce)  
+[www.jetbrains.com](https://www.jetbrains.com/products/compare/?product=pycharm&product=pycharm-ce)  
 # Installation de PostgreSQL  
 
 1. Ajout du referentiel officiel  
@@ -117,6 +117,19 @@ http_port = 8069
 ```  
 2. Ensuite cliquez sur `Edit configurations...` comme dans l'image suivante:  
 
-![configop.png](./.png)  
+![configop.png](./linux2.png)  
 
 3. Cliquez sur `Add new configuration` puis selectionnez `Python`.  
+![Add new configuration](./linux3.png)  
+
+4. Dans le formulaire selectionnez le script en cliquant sur l'icone de dossier qui est dans le champ `Script path` et en selectionnant le fichier odoo-bin dans   notre répertoire odoo.  
+
+![Script path](./linux4.png)  
+
+5. Assurez-vous d'avoir une configuration comme ceci et appuyez sur `OK`:  
+
+![cliquer sur OK](./linux5.png)  
+
+6. Cliquez sur `Run`	 pour lancer odoo.  
+
+![Run](./linux6.png)  
