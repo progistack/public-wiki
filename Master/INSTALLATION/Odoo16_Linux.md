@@ -8,7 +8,7 @@ Vous avez la possibilité de télécharger le code source de Odoo sur github de 
 2. Télechager le code en appuyant sur `Code` puis sur `Download Zip` comme indiqué dans l'image ci-dessous. 
 
 **NB**: N'oubliez pas de verifier la version souhaité (La version 16 dans notre exemple).  
-![odoo_github.png](./linux0.png)
+![odoo_github.png](/Master/INSTALLATION/Ressource/linux0.png
 
 ### Avec le terminal    
 1. Ouvrez votre terminal en cherchant dans la liste des applications ou en tapant `Ctrl + Alt + T`.    
@@ -61,7 +61,7 @@ service postgresql status
 ```  
 
 Vous deriez obtenir une sortie de ce genre:  
-![capture_d’écran_du_2023-04-14_13-11-42.png](./linux1.png)  
+![capture_d’écran_du_2023-04-14_13-11-42.png](/Master/INSTALLATION/Ressource/linux1.png)  
 
 3. Création d'un utilisateur  
 Une fois postgres installés nous allons créer un utilisateur pour la base de donnée que nous allons créer.  
@@ -117,27 +117,27 @@ http_port = 8069
 ```  
 2. Ensuite cliquez sur `Edit configurations...` comme dans l'image suivante:  
 
-![configop.png](./linux2.png)  
+![configop.png](/Master/INSTALLATION/Ressource/linux2.png)  
 
 3. Cliquez sur `Add new configuration` puis selectionnez `Python`.  
-![Add new configuration](./linux3.png)  
+![Add new configuration](/Master/INSTALLATION/Ressource/linux3.png)  
 
 4. Dans le formulaire selectionnez le script en cliquant sur l'icone de dossier qui est dans le champ `Script path` et en selectionnant le fichier odoo-bin dans   notre répertoire odoo.  
 
-![Script path](./linux4.png)  
+![Script path](/Master/INSTALLATION/Ressource/linux4.png)  
 
 5. Assurez-vous d'avoir une configuration comme ceci et appuyez sur `OK`:  
 
-![cliquer sur OK](./linux5.png)  
+![cliquer sur OK](/Master/INSTALLATION/Ressource/linux5.png)  
 
 6. Cliquez sur `Run`	 pour lancer odoo.  
 
-![Run](./linux6.png)  
+![Run](/Master/INSTALLATION/Ressource/linux6.png)  
 # Fin du tutoriel  
 Une fois notre serveur lancé, vous pouvez accéder à page de création de donnée via le lien suivant: http://localhost:8069 .  
 Vous aurez ainsi la page suivante:  
 
-![acceder à la page de création de donnée](./linux7.png)  
+![acceder à la page de création de donnée](/Master/INSTALLATION/Ressource/linux7.png)  
 
 Copiez le `master password` et sauvegardez le dans votre fichier odoo.conf comme ceci:  
 `admin_passwd = 9scx-e5wa-ah8m`  
@@ -145,8 +145,8 @@ Assurez que la ligne ne soit pas en commentaire en verifiant que le `;` n'est pa
 Remplissez le formulaire en reseignant les différents champs et cliquez sur `Create database`.  
 Une fois la base de donnée créée connectez-vous en renseignants les champs `Email` et `Password` que vous avez indiqués lors de la création de la base de donnée   puis cliquez sur `Se connecter`.  
 
-![Connectez-vous](./linux8.png)  
+![Connectez-vous](/Master/INSTALLATION/Ressource/linux8.png)  
 
 Vous obtenez ainsi une interface semblable à celle de l'image ci-dessous.  
 
-![Congratulation! vous êtes sur l'interface d'odoo](./linux9.png)  
+![Congratulation! vous êtes sur l'interface d'odoo](/Master/INSTALLATION/Ressource/linux9.png)  
